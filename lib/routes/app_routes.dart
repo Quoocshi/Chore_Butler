@@ -5,4 +5,5 @@ class AppRoutes {
   static const String child_register = '/child_register';
   static const String child_register_info = '/child_register_info';
   static const String child_login = '/child_login';
+  static const String child_home_page = '/child_home_page';
 }

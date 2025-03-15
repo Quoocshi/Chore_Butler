@@ -80,7 +80,12 @@ class ChildLogin extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              CustomButton(label: "Continue", onPressed: () {}),
+              CustomButton(
+                label: "Continue",
+                onPressed: () {
+                  Get.offAllNamed(AppRoutes.child_home_page);
+                },
+              ),
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:chore_butler/modules/Child/Home/screens/home_screen.dart';
 import 'package:chore_butler/modules/Child/Login/screens/child_login.dart';
 import 'package:chore_butler/modules/Child/Register/screens/child_register.dart';
 import 'package:chore_butler/modules/Child/Register/screens/child_register_info.dart';
@@ -37,6 +38,11 @@ class AppPages {
     GetPage(
       name: AppRoutes.child_login,
       page: () => ChildLogin(),
+      transition: Transition.noTransition,
+    ),
+    GetPage(
+      name: AppRoutes.child_home_page,
+      page: () => ChildHomeScreen(),
       transition: Transition.noTransition,
     ),
   ];
