@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:chore_butler/modules/login/widgets/role.dart';
+import 'package:chore_butler/modules/pick_role/widgets/role.dart';
 import 'package:chore_butler/routes/app_routes.dart';
 
 class PickRole extends StatefulWidget {
@@ -20,6 +20,10 @@ class _PickRoleState extends State<PickRole> {
 
     if (role == 1) {
       Get.toNamed(AppRoutes.login); // Điều hướng đến màn hình login
+    }
+
+    if (role == 2) {
+      Get.offAllNamed(AppRoutes.child_login);
     }
   }
 
